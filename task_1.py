@@ -7,6 +7,9 @@ class Nobody:
         else:
             self.name = "I'm Nobody, not " + str(name)
 
+    def __str__(self):
+        return f"I'm an object of class Nobody. My name is {self.name}"
+
 n1 = Nobody("Nobody")
 n2 = Nobody("Steven")
 
