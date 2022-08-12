@@ -37,8 +37,9 @@ class Student:
 class Aspirant(Student):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        #for key, value in kwargs.items():
+        #    setattr(self, key, value)
+        self.scientific_publications = kwargs['scientific_publications']
 
     def __str__(self):
         return f'I\'m an aspirant. My name is {self.first_name} \
