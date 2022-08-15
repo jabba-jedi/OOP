@@ -11,11 +11,12 @@ class Person:
             raise AttributeError('The age range must be between 1 and 100')
         self.full_name = self.__name + " " + self.__surname
 
-
+    #getter method
     @property
     def age(self):
         return self.__age
 
+    #setter method
     @age.setter
     def age(self, value):
         if value - self.__age > 1:
